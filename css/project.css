@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+} 
+body{
+	background: #17161A; 
+	scroll-behavior: smooth;  
+}
+.container{ 
+	position: relative;
+}
+.gallery1{  
+	padding: 20px;
+	width: 100%; 
+	margin: 0 auto;  
+}
+.gallery1 ul{     
+	display: flex;
+	margin-bottom: 10px;
+	justify-content: center;
+} 
+.gallery1 ul li{  
+	list-style: none;
+	border: 2px solid #7C06E4;     
+	padding: 8px 25px;  
+	margin: 5px;
+	letter-spacing: 1px;
+	cursor: pointer;   
+	text-align: center; 
+	color: #BDB7CE;   
+}
+.gallery1 ul li:hover{  
+	background: #7c06e4;
+	transition: ease-in-out .3s;   
+}
+.box-sec{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	transform-style: preserve-3d;
+	width: 100%;   
+}
+.box-sec .cards{    
+	position: relative;
+	width: 400px;
+	height: 300px;   
+	margin: 20px;
+	transform-style: preserve-3d;
+	perspective: 1000px;   
+	cursor: pointer;
+}
+.box-sec .cards .boxs{ 
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	transition: 1s ease;  
+}
+.box-sec .cards:hover .boxs{ 
+	transform: rotateY(180deg);
+}
+.box-sec .cards .boxs .imgBx{
+	position: absolute; 
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.box-sec .cards .boxs .imgBx img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover; 
+}
+.box-sec .cards .boxs .contentBx{
+	position: absolute; 
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #BDB7CE;   
+	backface-visibility: hidden;
+	display: flex;  
+	justify-content: center;
+	align-items: center;
+	transform-style: preserve-3d;
+	transform: rotateY(180deg); 
+}
+.box-sec .cards .boxs .contentBx div{
+	transform-style: preserve-3d;
+	padding: 20px; 
+	background: linear-gradient(45deg, #0e0710, #480584);  
+	transform: translateZ(90px);   
+	box-shadow: 2px 2px 6px #0421b5;
+}
+.box-sec .cards .boxs .contentBx h2{  
+	color: #fff;
+	font-size: 20px;
+	letter-spacing: 1px;    
+	border-bottom: 1px solid #f5f5f5;  
+	padding-bottom: 10px;
+	font-family: 'Poppins', sans-serif;
+}
+.box-sec .cards .boxs .contentBx p{  
+	color: #fff;
+	font-size: 16px;
+	letter-spacing: 1px;   
+	padding-top: 10px; 
+	font-family: 'Poppins', sans-serif; 
+	font-weight: 200; 
+	border-bottom: 1px solid #f5f5f5;  
+	padding-bottom: 10px;   
+}
+.box-sec .cards .boxs .contentBx a{   
+	color: #25a4b1; 
+	font-size: 14px; 
+	letter-spacing: 1px;   
+	padding: 15px 0;   
+	font-family: 'Poppins', sans-serif; 
+	font-weight: 200;   
+}
+.up-btn{ 
+	position: fixed;  
+	bottom: 60px;
+	font-family: monospace;
+    right: 40px; 
+    background: #795de6;
+    color: #fff;
+    padding: 12px 10px;
+    font-size: 14px;
+	border-radius: 50%;
+	transition: all .3s; 
+}
+
+
